@@ -12,12 +12,12 @@ public class Main {
 
         System.out.println("In order to finish type the letter q.");
         System.out.println("Enter an operand: ");
-        str = sc.nextLine();
+        str = sc.nextLine();    // gets the first number
         myInts.add(new Operand(Integer.parseInt(str)));
-        while(quit != true) {
+        while(!quit) {   //continues the loop until q is pressed
 
             System.out.print("Enter an operand: ");
-            str = sc.nextLine();
+            str = sc.nextLine();        //gets the secound number
 
             if(str.equals("q"))
             {
@@ -25,7 +25,7 @@ public class Main {
             }else{
                 myInts.add(new Operand(Integer.parseInt(str)));
                 System.out.print("Enter an operator: ");
-                str = sc.nextLine();
+                str = sc.nextLine();    //gets the operator
                 if(str.equals("q"))
                 {
                     quit = true;}
