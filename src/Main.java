@@ -11,13 +11,13 @@ public class Main {
         String str;
 
         System.out.println("In order to finish type the letter q.");
-        System.out.println("Enter an operand: ");
+        System.out.print("Enter an operand: ");
         str = sc.nextLine();    // gets the first number
         myInts.add(new Operand(Integer.parseInt(str)));
         while(!quit) {   //continues the loop until q is pressed
 
             System.out.print("Enter an operand: ");
-            str = sc.nextLine();        //gets the secound number
+            str = sc.nextLine();        //gets the second number
 
             if(str.equals("q"))
             {
